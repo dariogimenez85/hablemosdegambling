@@ -1,0 +1,13 @@
+@import "./base/base.scss";
+@import "./base/typography.scss";
+@import "./base/utilities.scss";
+
+@import "./abstract/variables.scss";
+@import "./abstract/animations.scss";
+
+@import "./components/navbar.scss";
+@import "./components/header.scss";
+@import "./components/welcome-section.scss";
+@import "./components/main-podcasts.scss";
+
+@import "./pages/home.scss";
