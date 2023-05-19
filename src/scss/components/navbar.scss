@@ -1,8 +1,8 @@
 .navbar{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    height: 7rem;
+    height: 12rem;
     width: 100%;
     max-width: 130rem;
     padding: 2rem 5rem;
@@ -19,7 +19,7 @@
 
         img{
             width: 100%;
-            max-width: 12rem;
+            max-width: 15rem;
             min-width: 9rem;
         }
     }
@@ -76,20 +76,21 @@
     }
     &__background{
         position: fixed;
-        top: 3.5rem;
-        right: 3.5rem;
+        top: 2rem;
+        right: 2rem;
         height: 3.5rem;
         width: 3.5rem;
         border-radius: 50%;
         background-image: radial-gradient(#923300, #f15300);
         z-index: 1000;
         transition: transform .8s;
+
     }
 
     &__button{
         position: fixed;
-        top: 3.3rem;
-        right: 3.3rem;
+        top: 2rem;
+        right: 2rem;
         height: 4rem;
         width: 4rem;
         border-radius: 50%;
@@ -111,6 +112,7 @@
         
     }
     &__list{
+        width: 70%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -134,7 +136,8 @@
             text-transform: uppercase;
             color: #fff;
             padding: 1rem 2rem;
-            font-size: 3rem;
+            border-bottom: 1px solid #fff;
+            font-size: clamp(2rem, 3vw, 3rem);
             font-weight: 300;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
             background-size: 220%;
@@ -173,7 +176,7 @@
         &,
         &::after,
         &::before{
-            width: 1.5rem;
+            width: 1.4rem;
             height: 2px;
             background-color: #333;
             display: inline-block;

@@ -1,0 +1,134 @@
+.meet-the-host-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 70rem;
+    box-shadow: 0px 10px 20px #000000d7;
+    position: relative;
+    top: -2px;
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+        max-height: 100%;
+    }
+
+    .meet-host-banner-img{
+        width: 100%;
+        height: 70rem;
+        background-image: url('/src/assets/img/hablemos-de-gambling-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width:1000px) {
+            display: none;
+        }
+    }
+    .meet-host-content{
+        height: 70rem;
+        flex: 0 0 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8rem 1.5rem 8rem 6.5rem;
+        background-image: linear-gradient(90deg, #923300, #f15300);
+
+        @media (max-width:1000px) {
+            padding: 4rem 2rem;
+            height: 100%;
+        }
+
+        &__text{
+            width: 100%;
+            max-width: 100rem;
+            margin: 0 auto;
+
+            &--title{
+                text-align: left;
+                color: #fff;
+                font-size: clamp(3rem, 6vw, 6.4rem);
+                font-family: "Poppins Bold";
+                margin-bottom: 2rem;
+                line-height: 1.2;
+
+                @media (max-width:1000px) {
+                    text-align: center;
+                }
+
+                span{
+                    color: #ebebeb;
+                    font-family: "Monserrat Semibold";
+                    font-size: clamp(1.5rem, 3vw, 1.8rem);
+                }
+            }
+            &--p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: clamp(1.5rem, 3vw, 1.8rem);
+                font-family: "Pontano Sans";
+                margin-bottom: 2rem;
+
+                @media (max-width:700px) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                p{
+                    &:not(:last-child){
+                        margin-right: 2rem;
+
+                        @media (max-width:700px) {
+                            margin-right: 0;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        &__contributors{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            flex-wrap: wrap;
+
+            @media (max-width:700px) {
+                flex-direction: column;
+            }
+
+            &--item{
+                padding: 1.2rem;
+                width: 19rem;
+                height: 18rem;
+                border-radius: 50%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                
+                &:not(:last-child){
+                    margin-right: 2rem;
+
+                    @media (max-width:700px) {
+                        margin-right: 0;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}

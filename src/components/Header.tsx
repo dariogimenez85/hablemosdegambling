@@ -10,13 +10,10 @@ function Header() {
                     <p className='header__content--description'>Stand out online with a professional website, online store, or portfolio. With iGue, you can turn any idea into a reality</p>
                     <div className='header__content--apps'>
                         <div>
-                            <img src="/src/assets/img/spotify-podcast-logo.png" alt="" />
+                            <img src="/src/assets/img/btn-spotify.png" alt="" />
                         </div>
                         <div>
-                            <img src="/src/assets/img/spotify-podcast-logo.png" alt="" />
-                        </div>
-                        <div>
-                            <img src="/src/assets/img/spotify-podcast-logo.png" alt="" />
+                            <img src="/src/assets/img/btn-apple-podcast.png" alt="" />
                         </div>
                     </div>
                 </div>

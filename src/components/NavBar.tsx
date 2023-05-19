@@ -6,7 +6,7 @@ function NavBar() {
         <>
             <div className='navbar'>
                 <div className='navbar__logo'>
-                    <img src="/src/assets/img/spotify-podcast-logo.png" alt="" />
+                    <img src="/src/assets/img/logo_HablemosDeGAMBLING.png" alt="" />
                 </div>
                 <div className='navbar__items'>
                     <a href="#" className='underline-nav-text'>Home</a>
