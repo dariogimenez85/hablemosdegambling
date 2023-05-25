@@ -4,7 +4,7 @@ function Episode() {
 
     return (
         <>
-            <div className='episode-wrapper'>
+            <div id='episodes' className='episode-wrapper'>
                 <h4 className='episode-wrapper__title'>
                     {/* <span>our recent</span> */}
                     Episodes

@@ -12,6 +12,20 @@ body{
     box-sizing: inherit;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
   *::selection{
-    background-color: #f15300;
+    color: #fff;
+    // background-color: #f15300;
+    background-color: #660066;
+}
+
+.app-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
 }

@@ -1,11 +1,11 @@
+import Episode from "../components/Episodes";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MeetTheHost from "../components/MeetTheHost";
 import NavBar from "../components/NavBar";
 import WelcomeSection from "../components/WelcomeSection";
-import Episode from "../components/Episodes";
-import "./../scss/main.scss";
 import WhyListenUs from "../components/WhyListenUs";
-import Footer from "../components/Footer";
+import "./../scss/main.scss";
 
 function Home() {
     return (

@@ -4,7 +4,7 @@ function MeetTheHost() {
 
     return (
         <>
-            <div className='meet-the-host-wrapper'>
+            <div id='meet-the-host' className='meet-the-host-wrapper'>
                 <div className='meet-host-banner-img'>
                 </div>
                 <div className='meet-host-content'>
