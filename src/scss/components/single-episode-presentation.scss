@@ -1,0 +1,101 @@
+.single-episode-presentation-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    width: 100%;
+    max-width: 1300px;
+
+    @media (max-width:750px) {
+        flex-direction: column;
+    }
+
+    .episode-presentation-img{
+        margin-right: 4rem;
+        border-radius: .8rem;
+        padding: .7rem;
+        width: 50%;
+        min-width: 20rem;
+        max-width: 60rem;
+        background-color: #fff;
+        
+        @media (max-width:750px) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+            width: 95%;
+        }
+
+        img{ 
+            width: 100%;
+            border-radius: .7rem;
+        }
+    }
+
+    .episode-presentation-details{
+
+        &__title{
+            font-family: "Poppins Bold";
+            color: #fff;
+            font-size: clamp(1.8rem, 4vw, 4.5rem);
+            line-height: 1.1;
+            text-align: left;
+            width: 100%;
+            max-width: 50rem;
+            margin-bottom: 2.5rem;
+
+            span{
+                font-family: "Monserrat Semibold";
+                font-size: clamp(1.4rem, 2vw, 1.7rem);
+                color: #adadad75;
+                text-transform: uppercase;
+
+            }
+        }
+        &__btn{
+            border: none;
+            padding: 1rem 3rem;
+            text-transform: capitalize;
+            font-family: "Monserrat Semibold";
+            font-size: clamp(1.4rem, 2vw, 1.8rem);
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 3rem;
+            background-color: #7e007e;
+            transition: all .2s ease-in-out;
+
+            @media (max-width:750px) {
+                width: 100%;
+                padding: .7rem 3rem;
+            }
+
+            &:hover{
+                background-color: #c000c0;
+                color: #222;
+            }
+        }
+        &__listen-on{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &--text{
+                font-size: clamp(1.6rem, 2vw, 1.8rem);
+                color: #fff;
+                font-family: "Pontano Sans";
+                margin-right: 1.5rem;
+            }
+            &--list{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                img{
+                    width: 10rem;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

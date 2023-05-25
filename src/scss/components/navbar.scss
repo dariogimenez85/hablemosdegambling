@@ -2,7 +2,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: 12rem;
+    height: fit-content;
     width: 100%;
     max-width: 130rem;
     padding: 2rem 5rem;
@@ -12,24 +12,38 @@
     background: transparent;
     margin: 0 auto;
 
+    @media (max-width:400px) {
+        padding: 1rem;
+    }
+
     &__logo{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        width: 30%;
+
+        @media (max-width: 1000px) {
+            justify-content: center;
+            width: 100%;
+        }
 
         img{
-            width: 100%;
-            max-width: 15rem;
-            min-width: 9rem;
+            width: 25rem;
+
+            @media (max-width:600px) {
+                width: 18rem;
+            }
         }
     }
     &__items{
+        width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+
         @media (max-width:1000px) {
             display: none;
         }
-        justify-content: center;
-        align-items: center;
 
         a{
             text-decoration: none;
@@ -41,7 +55,8 @@
 
             &:hover,
             &:focus{
-                color: #f15300;
+                // color: #f15300;
+                color: #db6ddb;
             }
         }
     }
@@ -58,10 +73,11 @@
         left: 0;
         width: 0;
         height: 2px;
-        background-color: #f15300;
+        // background-color: #f15300;
+        background-color: #db6ddb;
         transition: all .2s ease-in;
     }
-    &:focus::after {
+    &:hover::after {
         width: 100%;
     }
 }
@@ -81,10 +97,15 @@
         height: 3.5rem;
         width: 3.5rem;
         border-radius: 50%;
-        background-image: radial-gradient(#923300, #f15300);
+        // background-image: radial-gradient(#923300, #f15300);
+        background-image: radial-gradient(#660066, #db6ddb);
         z-index: 1000;
         transition: transform .8s;
 
+        @media (max-width:600px) {
+            top: 1rem;
+            right: 1rem;
+        }
     }
 
     &__button{
@@ -99,6 +120,11 @@
         cursor: pointer;
         box-shadow: 0 1rem 3rem rgba(#000, .1);
         text-align: center;
+
+        @media (max-width:600px) {
+            top: 1rem;
+            right: 1rem;
+        }
     }
     &__nav{
         width: 0;
@@ -150,7 +176,8 @@
         &:hover,
         &:active{
             background-position: 100%;
-            color: #f15300;
+            // color: #f15300;
+            color: #660066;
             transform: translateX(1rem);
         }
     }

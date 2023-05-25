@@ -38,14 +38,14 @@ function WhyListenUs() {
                                 <img className='listen-us-grid__item--img' src="/src/assets/img/mic-icon.png" alt="" />
                                 <div className='listen-us-grid__item--text'>
                                     <h6>World-class interviews</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper</p>
+                                    <p>Lorem ipsu, consectetur adipisicing elit. Maiores iste nobis, voluptatem architecto debitis omnis suscipit impedit id minus temporibus cum, qui soluta! Dolores illo tempore quidem unde eligendi quas.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='listen-us-wrapper__img'>
-                    <img src="/src/assets/img/hablemos-de-gambling-12.png" alt="" />
+                    {/* <img src="/src/assets/img/hablemos-de-gambling-12.png" alt="" /> */}
                 </div>
             </div>
         </>

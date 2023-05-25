@@ -86,7 +86,7 @@
                     justify-content: center;
                     transition: all .5s ease-in;
                     cursor: pointer;
-                    background-image: radial-gradient(circle, #e27f49e1 20%, #f05908e1 10%);
+                    background-image: radial-gradient(circle, #d812d8ce 20%, #da62da1f 100%);
         
                     img{
                         transform: scale(1) translateX(2px);
@@ -127,6 +127,8 @@
         &:active{
             color: #f15300;
             border: 1px solid #f15300;
+            color: #d812d8ce;
+            border: 1px solid #d812d8ce;
         }
     }
 

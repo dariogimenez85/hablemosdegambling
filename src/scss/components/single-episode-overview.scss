@@ -1,0 +1,188 @@
+.episode-overview-wrapper{
+    width: 100%;
+    max-width: 1000px;
+    color: #fff;
+
+    .overview-intro{
+        padding: 1rem 10rem;
+        width: 100%;
+        
+        @media (max-width:700px) {
+            padding: 1rem 5rem;
+        }
+        
+        h3{
+            font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+            font-family: "Monserrat Semibold";
+            margin: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: clamp(1.5rem, 2vw, 1.8rem);
+            font-family: "Pontano Sans";
+            margin-bottom: 1rem;
+        }
+        ul{
+            padding: 1rem 2rem;
+            li{
+                font-size: clamp(1.5rem, 2vw, 1.8rem);
+                font-family: "Pontano Sans";
+            }
+        }
+        img{
+            width: 100%;
+            margin: 2rem auto;
+        }
+    
+        &__get-start{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem 0;
+
+            @media (max-width:700px) {
+                flex-direction: column;
+            }
+
+            &--text-box{
+                margin-right: 3rem;
+                width: 50%;
+
+                @media (max-width:700px) {
+                    margin-right: 0;
+                    width: 100%;
+                }
+
+                h4{
+                    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+                    font-family: "Monserrat Semibold";
+                    margin-bottom: 2rem;
+                }
+                p{
+                    font-size: clamp(1.5rem, 2vw, 1.8rem);
+                    font-family: "Pontano Sans";
+                    margin-bottom: 1rem;
+                }
+            }
+            img{
+                width: 50%;
+                min-width: 20rem;
+
+                @media (max-width:700px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .overview-highlight{
+        width: 100%;
+        padding: 0 4rem;
+        margin-bottom: 5rem;
+
+        @media (max-width:700px) {
+            padding: 0 2rem;
+        }
+
+        p{
+            background-color: #d812d8ce;
+            width: 100%;
+            border-radius: 1rem;
+            padding: 3rem 6rem;
+            font-size: clamp(1.5rem, 2vw, 1.8rem);
+            font-family: "Pontano Sans";
+
+            @media (max-width:700px) {
+                padding: 2rem 4rem;
+                text-align: center;
+            }
+        }
+
+    }
+    .overview-start{
+        padding: 1rem 10rem;
+        width: 100%;
+
+        @media (max-width:700px) {
+            padding: 1rem 5rem;
+        }
+
+        h4{
+            font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+            font-family: "Monserrat Semibold";
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: clamp(1.5rem, 2vw, 1.8rem);
+            font-family: "Pontano Sans";
+            margin-bottom: 1rem;
+        }
+        ol{
+            padding: 1rem 2rem;
+            li{
+                font-size: clamp(1.5rem, 2vw, 1.8rem);
+                font-family: "Pontano Sans";
+            }
+        }
+    }
+    .overview-personal{
+        margin: 0 auto;
+        border-radius: 1rem;
+        width: 90%;
+        max-width: 1000px;
+        padding: 3rem 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3f3f3f;
+        box-shadow: -5px 15px 20px #1a1a1abd;
+
+        @media (max-width:700px) {
+            flex-direction: column;
+            padding: 2rem 4rem;
+        }
+
+
+        &__img-box{
+            width: 30%;
+            min-width: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+
+            &--img{
+                width: 90%;
+                border-radius: 50%;
+                padding: 1rem;
+                background-color: #fff;
+
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+        &__description{
+            width: 100%;
+
+            h5{
+                font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+                font-family: "Monserrat Semibold";
+                margin-bottom: 2rem;
+
+                span{
+                    color: #ffffff9a;
+                    text-transform: uppercase;
+                    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+                    font-family: "Monserrat Semibold";
+                    margin-bottom: 2rem;
+                }
+            }
+            p{
+                font-size: clamp(1.5rem, 2vw, 1.8rem);
+                font-family: "Pontano Sans";
+            }
+            // &--icons{}
+        }
+    }
+}
