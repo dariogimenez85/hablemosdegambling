@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Episode from './pages/Episode'
 import Home from './pages/Home'
-import SingleEpisode from './pages/SingleEpisode'
 import './scss/main.scss'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/episode/:id" element={<SingleEpisode />} />
+            <Route path="/episode/:id" element={<Episode />} />
           </Routes>
         </BrowserRouter>
       </div>

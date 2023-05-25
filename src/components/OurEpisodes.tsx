@@ -1,6 +1,6 @@
 import './../scss/main.scss'
 
-function Episode() {
+function OurEpisodes() {
 
     return (
         <>
@@ -10,7 +10,7 @@ function Episode() {
                     Episodes
                 </h4>
                 <div className='episodes'>
-                    <div className='episode'>
+                    <a href='/episode/1' className='episode'>
                         <div className='episode__img'>
                             <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
                         </div>
@@ -20,7 +20,7 @@ function Episode() {
                                 <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
                             </span>
                         </div>
-                    </div>
+                    </a>
                     <div className='episode'>
                         <div className='episode__img'>
                             <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
@@ -105,4 +105,4 @@ function Episode() {
     )
 }
 
-export default Episode
+export default OurEpisodes
