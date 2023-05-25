@@ -14,9 +14,9 @@ function SingleEpisodePresentation() {
                         <br />
                         Ep 1: How to build a world-class business brand
                     </h2>
-                    <button className='episode-presentation-details__btn'>play now</button>
+                    {/* <button className='episode-presentation-details__btn'>play now</button> */}
                     <div className='episode-presentation-details__listen-on'>
-                        <div className='episode-presentation-details__listen-on--text'>Or listen on:</div>
+                        <div className='episode-presentation-details__listen-on--text'>Escuchar en plataformas</div>
                         <div className='episode-presentation-details__listen-on--list'>
                             <img src="/src/assets/img/btn-spotify.png" alt="" />
                             <img src="/src/assets/img/btn-apple-podcast.png" alt="" />

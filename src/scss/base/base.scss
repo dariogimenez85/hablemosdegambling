@@ -12,6 +12,10 @@ body{
     box-sizing: inherit;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
   *::selection{
     color: #fff;
     // background-color: #f15300;

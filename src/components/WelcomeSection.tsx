@@ -5,7 +5,7 @@ function WelcomeSection() {
 
     return (
         <>
-            <div className='welcome-section-wrapper'>
+            <div id='welcome-section' className='welcome-section-wrapper'>
                 <div className='welcome-section-wrapper__main-podcasts'>
                     {/* <MainPodcasts /> */}
                 </div>

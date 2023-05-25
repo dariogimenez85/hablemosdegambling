@@ -9,12 +9,10 @@ function NavBar() {
                     <img src="/src/assets/img/logo_HablemosDeGAMBLING.png" alt="" />
                 </div>
                 <div className='navbar__items'>
-                    <a href="/" className='underline-nav-text'>Home</a>
-                    <a href="#" className='underline-nav-text'>About Us</a>
-                    <a href="#" className='underline-nav-text'>Meet The Host</a>
-                    <a href="#" className='underline-nav-text'>Packages</a>
-                    <a href="/episode/1" className='underline-nav-text'>Episode 1</a>
-                    <a href="#" className='underline-nav-text'>Contact Us</a>
+                    <a href="/" className='underline-nav-text'>inicio</a>
+                    <a href="/#welcome-section" className='underline-nav-text'>nosotros</a>
+                    <a href="#episodes" className='underline-nav-text'>epipsodios</a>
+                    <a href="#meet-the-host" className='underline-nav-text'>host</a>
                 </div>
                 <div className="navigation">
                     <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
@@ -28,8 +26,8 @@ function NavBar() {
                     <nav className="navigation__nav">
                         <ul className="navigation__list">
                             <li className="navigation__item"><a href="/" className="navigation__link">Home</a></li>
-                            <li className="navigation__item"><a href="#" className="navigation__link">About Us</a></li>
-                            <li className="navigation__item"><a href="#" className="navigation__link">Meet The Host</a></li>
+                            <li className="navigation__item"><a href="/#welcome-section" className="navigation__link">About Us</a></li>
+                            <li className="navigation__item"><a href="#meet-the-host" className="navigation__link">Meet The Host</a></li>
                             <li className="navigation__item"><a href="#" className="navigation__link">Packages</a></li>
                             <li className="navigation__item"><a href="/episode/1" className="navigation__link">Episode 1</a></li>
                             <li className="navigation__item"><a href="#" className="navigation__link">Contact Us</a></li>
