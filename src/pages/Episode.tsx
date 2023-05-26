@@ -8,7 +8,7 @@ function Episode() {
     <>
         <div className="episode-section-wrapper">
             <NavBar />
-            <EpisodeDetails />
+            <EpisodeDetails  />
             <Footer />            
         </div>
     </>

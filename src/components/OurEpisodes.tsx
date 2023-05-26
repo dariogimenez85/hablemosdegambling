@@ -1,6 +1,15 @@
 import './../scss/main.scss'
+import data from './../assets/data/episodes.json';
+import EpisodeCard from './EpisodeCard'
 
 function OurEpisodes() {
+
+    const listEpisodes = data.episodes.map((episode)=>{
+        
+        return <EpisodeCard data={episode} />
+    }
+
+    )
 
     return (
         <>
@@ -10,94 +19,7 @@ function OurEpisodes() {
                     Episodes
                 </h4>
                 <div className='episodes'>
-                    <a href='/episode/1' className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </a>
-                    <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div>
-                    {/* <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div>
-                    <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div>
-                    <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div>
-                    <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div>
-                    <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div>
-                    <div className='episode'>
-                        <div className='episode__img'>
-                            <img src="/src/assets/img/hablemos-de-gambling-5.png" alt="" />
-                        </div>
-                        <div className='episode__data'>
-                            <span className='episode__data--text'>Ep 1: How to build a world-class business brand</span>
-                            <span className='episode__data--play-btn'>
-                                <img src="/src/assets/img/icons/play-solid.svg" alt="play" />
-                            </span>
-                        </div>
-                    </div> */}
+                    {listEpisodes}
                 </div>
                 {/* <button className='episode-wrapper__btn'>browse more episodes</button> */}
             </div>

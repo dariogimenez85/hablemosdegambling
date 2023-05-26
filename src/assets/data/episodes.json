@@ -1,6 +1,7 @@
 {
     "episodes": [
         {
+            "id": 3,
             "date": "23 de Mayo de 2023",
             "title": "#2 - Maximiliano Salvide - CMO de IGEx",
             "links": {
@@ -11,6 +12,7 @@
             "description": "<h1>Hablemos de Gamabling, con Maximiliano Salvide</h1><p>Segundo episodio de este podcast en el cual tenemos la misión de entrevistar a los referentes de la industria del gambling online de LATAM y compartir con todos ustedes su experiencia en el rubro y su opinión sobre el panorama en la región. En esta oportunidad conversamos con Maximiliano Salvide, experto en marketing digital y casino online, CMO de IGEx.</p><h2>Links de interés, sobre lo mencionado en la charla</h2><p><b>Link Tree IGEx:</b></p><p>https://linktr.ee/igamingexhibition</p><p>El doble de Messi⁠:</p><p><b>https://www.instagram.com/medicenmessi_</b></p><h2>Invitado</h2><p><b>Maximiliano Salvide:</b></p><p>msalvide@gmail.com</p><h2>Host</h2><p><b>Dario Gimenez:</b></p><p>⁠dario@pow-gaming.com</p>"
         },
         {
+            "id": 2,
             "date": "16 de Mayo de 2023",
             "title": "#1 - Shai Rosenzvit - Head Of Gaming de Super7",
             "links": {
@@ -21,6 +23,7 @@
             "description": "<h1>Hablemos de Gamabling, con Shai Rosenzvit</h1><p>Primer episodio de este podcast en el cual tenemos la misión de entrevistar a los referentes de la industria del gambling online de LATAM y compartir con todos ustedes su experiencia en el rubro y su opinión sobre el panorama en la región. Inauguramos este espacio conversando con Shai Rosenzvit, experto en marketing digital y Head of Gaming de IVISA, empresa argentina que tiene operaciones de casino online y físico en varias provincias argentinas. Shai nos comparte su experiencia en el desarrollo y posicionamiento de la marca “Super 7”, casino que cuenta con la licencia de la Ciudad de Buenos Aires y Mendoza y sobre los planes de expansión de la marca.</p><h2>Links de interés, sobre lo mencionado en la charla</h2>⁠<p><b>Pat Flynn⁠</b>:</p><p>https://www.smartpassiveincome.com/shows/spi/</p>⁠<p>Super 7⁠</p><p>https://www.super7.bet.ar</p><h2>Invitado</h2><p><b<Shai Rosenzvit:</b></p><p>⁠info@shai-rosen.com⁠</p><h2>Host</h2><p><b>Dario Gimenez:<b/></p><p>⁠dario@pow-gaming.com</p>"
         },
         {
+            "id": 1,
             "date": "16 de Mayo de 2023",
             "title": "#0 - Presentación",
             "links": {
