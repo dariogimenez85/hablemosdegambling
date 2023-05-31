@@ -11,7 +11,7 @@ function NavBar() {
                 <div className='navbar__items'>
                     <a href="/" className='underline-nav-text'>inicio</a>
                     <a href="/#welcome-section" className='underline-nav-text'>nosotros</a>
-                    <a href="#episodes" className='underline-nav-text'>epipsodios</a>
+                    <a href="#episodes" className='underline-nav-text'>episodios</a>
                     <a href="#meet-the-host" className='underline-nav-text'>host</a>
                 </div>
                 <div className="navigation">
