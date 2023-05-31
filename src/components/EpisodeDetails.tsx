@@ -1,36 +1,61 @@
-import './../scss/main.scss'
+import './../scss/main.scss';
+import data from './../assets/data/episodes.json';
+import parse from "html-react-parser";
 
-function SingleEpisodePresentation() {
+
+function SingleEpisodePresentation(params: any) {
+
+    const { id } = params;
+    // const idEpisodes = (ep: any)=>{
+    //     console.log(ep.id == id);
+        
+    //     return ep.id === id
+    // }
+
+    // const episodeDetailData = data.episodes.find( x => x.id === id);
+    // const episodeDetailData = data.episodes.find(idEpisodes) 
+    const episodeDetailData = data.episodes.find( x => x.id === id);
+
+    
+
+    console.log(episodeDetailData);
+    
 
     return (
         <>
             <div className='single-episode-wrapper'>
                 <div className='episode-presentation'>
                     <div className='episode-presentation__img'>
-                        <img src="/src/assets/img/single-episode-1.jpeg" alt="" />
+                        <img src={`/src/assets/img/episodes/${episodeDetailData?.picture}`} alt="" />
                     </div>
                     <div className='episode-presentation__details'>
                         <h2 className='episode-presentation__details--title'>
-                            <span>chemichal | june 14, 2023</span>
+                            <span>{episodeDetailData?.date}</span>
                             <br />
-                            Ep 1: How to build a world-class business brand
+                            {episodeDetailData?.title}
                         </h2>
                         {/* <button className='episode-presentation__details--btn'>play now</button> */}
                         <div className='episode-presentation__details--listen-on'>
                             <div className='episode-presentation__details--listen-on-text'>Escuchar en plataformas</div>
                             <div className='episode-presentation__details--listen-on-list'>
-                                <img src="/src/assets/img/btn-spotify.png" alt="" />
-                                <img src="/src/assets/img/btn-apple-podcast.png" alt="" />
+                                <a href={episodeDetailData?.links.spotify}>
+                                    <img src="/src/assets/img/btn-spotify.png" alt="" />
+                                </a>
+                                <a href={episodeDetailData?.links.apple_podcast}>
+                                    <img src="/src/assets/img/btn-apple-podcast.png" alt="" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="overview-intro">
-                    <h3>Overview</h3>
+
+                    {parse(episodeDetailData?.description as string)}
+                    {/* <h3>Overview</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor sed nunc sed pulvinar. Nam pharetra metus viverra diam mattis consequat. Cras luctus mauris sed sem consectetur, nec egestas est gravida. Duis faucibus condimentum mi, in porttitor nisi maximus consectetur.</p>
                     <h3>Starting a podcast is easier than ever</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ducimus dolore, quos modi architecto minima dicta, rem maxime similique quisquam impedit tempora neque, doloremque recusandae accusantium eum! Deserunt, deleniti illo.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus alias illo magnam animi libero nisi quod odio eaque, quo repellendus amet nam nesciunt porro numquam laboriosam perspiciatis doloribus consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus enim illum, tempore animi perferendis, ab modi cupiditate obcaecati facilis quam maiores ut in error amet! Voluptatem modi amet inventore sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus alias illo magnam animi libero nisi quod odio eaque, quo repellendus amet nam nesciunt porro numquam laboriosam perspiciatis doloribus consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus enim illum, tempore animi perferendis, ab modi cupiditate obcaecati facilis quam maiores ut in error amet! Voluptatem modi amet inventore sit.</p> */}
                 </div>
                 <div className="overview-highlight">
                     <p>
