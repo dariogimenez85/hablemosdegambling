@@ -125,8 +125,14 @@
             padding: 1rem 5rem;
         }
         
-        h3{
+        h1{
             font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+            font-family: "Monserrat Semibold";
+            margin: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        h2{
+            font-size: clamp(1.5rem, 2vw, 2rem);
             font-family: "Monserrat Semibold";
             margin: 3rem 0;
             margin-bottom: 2rem;
@@ -134,7 +140,14 @@
         p{
             font-size: clamp(1.5rem, 2vw, 1.8rem);
             font-family: "Pontano Sans";
-            margin-bottom: 1rem;
+            margin-bottom: .7rem;
+
+            b{
+                font-size: clamp(1.5rem, 2vw, 1.8rem);
+                font-family: "Pontano Sans";
+                margin-bottom: .5rem;
+                font-weight: 600;
+            }
         }
         ul{
             padding: 1rem 2rem;

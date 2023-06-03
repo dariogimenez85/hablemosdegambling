@@ -6,14 +6,6 @@ import parse from "html-react-parser";
 function SingleEpisodePresentation(params: any) {
 
     const { id } = params;
-    // const idEpisodes = (ep: any)=>{
-    //     console.log(ep.id == id);
-        
-    //     return ep.id === id
-    // }
-
-    // const episodeDetailData = data.episodes.find( x => x.id === id);
-    // const episodeDetailData = data.episodes.find(idEpisodes) 
     const episodeDetailData = data.episodes.find( x => x.id === id);
 
     
@@ -34,7 +26,6 @@ function SingleEpisodePresentation(params: any) {
                             <br />
                             {episodeDetailData?.title}
                         </h2>
-                        {/* <button className='episode-presentation__details--btn'>play now</button> */}
                         <div className='episode-presentation__details--listen-on'>
                             <div className='episode-presentation__details--listen-on-text'>Escuchar en plataformas</div>
                             <div className='episode-presentation__details--listen-on-list'>
@@ -49,13 +40,7 @@ function SingleEpisodePresentation(params: any) {
                     </div>
                 </div>
                 <div className="overview-intro">
-
                     {parse(episodeDetailData?.description as string)}
-                    {/* <h3>Overview</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor sed nunc sed pulvinar. Nam pharetra metus viverra diam mattis consequat. Cras luctus mauris sed sem consectetur, nec egestas est gravida. Duis faucibus condimentum mi, in porttitor nisi maximus consectetur.</p>
-                    <h3>Starting a podcast is easier than ever</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ducimus dolore, quos modi architecto minima dicta, rem maxime similique quisquam impedit tempora neque, doloremque recusandae accusantium eum! Deserunt, deleniti illo.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatibus alias illo magnam animi libero nisi quod odio eaque, quo repellendus amet nam nesciunt porro numquam laboriosam perspiciatis doloribus consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus enim illum, tempore animi perferendis, ab modi cupiditate obcaecati facilis quam maiores ut in error amet! Voluptatem modi amet inventore sit.</p> */}
                 </div>
                 <div className="overview-highlight">
                     <p>
